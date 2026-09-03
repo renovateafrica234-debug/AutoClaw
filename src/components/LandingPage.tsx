@@ -50,7 +50,7 @@ export function LandingPage({ onEnterDashboard, onOpenOnboarding }: LandingPageP
 
   return (
     <div className="min-h-screen w-full bg-[#0a0a0e] bg-[radial-gradient(#1e1e26_1px,transparent_1px)] [background-size:24px_24px] text-white font-sans antialiased selection:bg-[#E3FF00] selection:text-black flex flex-col items-center relative">
-      {/* Splash Screen: Pure styled text lockup */}
+      {/* Splash Screen: Logo image lockup */}
       <AnimatePresence>
         {showSplash && (
           <motion.div
@@ -62,9 +62,11 @@ export function LandingPage({ onEnterDashboard, onOpenOnboarding }: LandingPageP
             className="fixed inset-0 z-50 bg-[#0a0a0e] flex flex-col items-center justify-center p-6 text-center select-none cursor-pointer"
           >
             <div className="shrink-0 flex flex-col items-center">
-              <span className="text-5xl font-black italic tracking-tighter text-[#E3FF00] select-none mb-3">
-                AC
-              </span>
+              <img
+                src="/autoclaw-logo.png"
+                alt="AutoClaw"
+                className="h-20 w-auto object-contain mb-4 drop-shadow-[0_0_24px_rgba(227,255,0,0.35)]"
+              />
               <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-zinc-400 font-semibold mt-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#E3FF00] animate-pulse" />
                 <span>AUTOCLAW OPERATING SYSTEM</span>
@@ -81,7 +83,7 @@ export function LandingPage({ onEnterDashboard, onOpenOnboarding }: LandingPageP
         id="autoclaw-header"
         className="sticky top-0 z-40 w-full bg-[#0a0a0e]/95 backdrop-blur-md border-b border-zinc-800/80 px-4 md:px-8 py-3.5 flex items-center justify-between shadow-2xl shadow-black"
       >
-        {/* Header Bar: Pure HTML/Tailwind text lockup */}
+        {/* Header Bar: Logo image lockup */}
         <div className="flex items-center gap-3">
           <button
             type="button"
@@ -89,9 +91,11 @@ export function LandingPage({ onEnterDashboard, onOpenOnboarding }: LandingPageP
             title="AutoClaw Home"
             className="flex items-center group select-none cursor-pointer shrink-0"
           >
-            <span className="text-3xl font-black italic tracking-tighter text-[#E3FF00] select-none">
-              AC
-            </span>
+            <img
+              src="/autoclaw-logo.png"
+              alt="AutoClaw"
+              className="h-9 w-auto object-contain drop-shadow-[0_0_14px_rgba(227,255,0,0.25)] group-hover:scale-105 transition-transform duration-200"
+            />
           </button>
         </div>
 

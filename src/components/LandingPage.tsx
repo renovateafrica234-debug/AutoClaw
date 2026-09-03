@@ -65,9 +65,12 @@ export function LandingPage({ onEnterDashboard, onOpenOnboarding }: LandingPageP
               <img
                 src="/autoclaw-logo.png"
                 alt="AutoClaw"
-                className="h-20 w-auto object-contain mb-4 drop-shadow-[0_0_24px_rgba(227,255,0,0.35)]"
+                className="h-20 w-auto object-contain mb-2 drop-shadow-[0_0_24px_rgba(227,255,0,0.35)]"
               />
-              <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-zinc-400 font-semibold mt-2">
+              <span className="text-2xl font-bold tracking-tight text-white mt-2">
+                AUTOCLAW
+              </span>
+              <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-zinc-400 font-semibold mt-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#E3FF00] animate-pulse" />
                 <span>AUTOCLAW OPERATING SYSTEM</span>
               </div>
@@ -83,7 +86,7 @@ export function LandingPage({ onEnterDashboard, onOpenOnboarding }: LandingPageP
         id="autoclaw-header"
         className="sticky top-0 z-40 w-full bg-[#0a0a0e]/95 backdrop-blur-md border-b border-zinc-800/80 px-4 md:px-8 py-3.5 flex items-center justify-between shadow-2xl shadow-black"
       >
-        {/* Header Bar: Logo image lockup */}
+        {/* Header Bar: Logo with AUTOCLAW site name */}
         <div className="flex items-center gap-3">
           <button
             type="button"
@@ -96,6 +99,9 @@ export function LandingPage({ onEnterDashboard, onOpenOnboarding }: LandingPageP
               alt="AutoClaw"
               className="h-9 w-auto object-contain drop-shadow-[0_0_14px_rgba(227,255,0,0.25)] group-hover:scale-105 transition-transform duration-200"
             />
+            <span className="text-xl sm:text-2xl font-black tracking-tight text-white ml-2.5">
+              AUTOCLAW
+            </span>
           </button>
         </div>
 

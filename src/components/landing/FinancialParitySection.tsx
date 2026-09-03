@@ -147,12 +147,12 @@ export function FinancialParitySection({ onGenerateBuyerQuote }: FinancialParity
                 2.0L Turbocharged Petrol • ₦84,000,000
               </p>
 
-              {/* 360° Sequence Viewer UI for Velar */}
+              {/* Perspective Viewer UI for Velar */}
               <div className="mb-5">
                 <Vehicle360Viewer
                   vehicleName="Range Rover Velar P250"
                   vehicleType="petrol"
-                  baseImage="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=1200&q=80"
+                  baseImage="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
                   badge="PETROL INSPECTION"
                 />
               </div>
@@ -317,12 +317,12 @@ export function FinancialParitySection({ onGenerateBuyerQuote }: FinancialParity
                 82.5 kWh Blade Battery AWD • ₦68,000,000
               </p>
 
-              {/* 360° Sequence Viewer UI for BYD Seal */}
+              {/* Perspective Viewer UI for BYD Seal */}
               <div className="mb-5">
                 <Vehicle360Viewer
                   vehicleName="BYD Seal Performance"
                   vehicleType="ev"
-                  baseImage="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1200&q=80"
+                  baseImage="https://images.unsplash.com/photo-1549399542-7e3f8b79c4d8?auto=format&fit=crop&w=1200&q=80"
                   badge="EV 360 INSPECTION"
                 />
               </div>

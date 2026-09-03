@@ -54,12 +54,14 @@ export function ConversionFooter({
       {/* Bottom Bar */}
       <div className="w-full bg-[#07070a] border-t border-zinc-800/80 py-8 px-4 md:px-8">
         <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Flush-left unboxed "AC" pure text lockup */}
+          {/* Logo image lockup */}
           <div className="flex items-center gap-4">
             <div className="shrink-0 flex items-center">
-              <span className="text-2xl font-black italic tracking-tighter text-[#E3FF00] select-none">
-                AC
-              </span>
+              <img
+                src="/autoclaw-logo.png"
+                alt="AutoClaw"
+                className="h-8 w-auto object-contain"
+              />
             </div>
             <p className="text-xs text-zinc-400 font-medium text-left">
               © 2026 AUTOCLAW. Built for Nigeria's premier auto dealers.

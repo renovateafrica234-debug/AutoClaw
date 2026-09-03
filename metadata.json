@@ -1,0 +1,6 @@
+{
+  "name": "AutoClaw - Sell Cars 9x Faster | Nigeria Dealer Syndicate",
+  "description": "NATIONWIDE DEALER NETWORK • LAGOS • ABUJA • PH • IBADAN. AutoClaw autonomous automotive sales engine, Petrol vs EV savings telemetry, and 7-channel marketplace syndication.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

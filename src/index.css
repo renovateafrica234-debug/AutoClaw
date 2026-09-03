@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-yellow: #eaff00;
+  --color-yellow-dark: #bbcc03;
+  --color-near-black: #141414;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #b3b3b3;
+  --color-light-grey: #f6f6f6;
+}
+
+:root {
+  --color-black: #000000;
+  --color-near-black: #141414;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #b3b3b3;
+  --color-light-grey: #f6f6f6;
+  --color-white: #ffffff;
+  --color-yellow: #eaff00;
+  --color-yellow-dark: #bbcc03;
+}
+
+@layer base {
+  body {
+    background-color: #0a0a0e;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Neue Plak', 'Cabinet Grotesk', 'Plus Jakarta Sans', 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: -0.015em;
+    overflow-x: hidden;
+  }
+}
+
+/* 363 Sudbury custom utilities */
+.bg-yellow {
+  background-color: #eaff00;
+}
+.text-yellow {
+  color: #eaff00;
+}
+.border-yellow {
+  border-color: #eaff00;
+}
+.hover\:text-yellow:hover {
+  color: #eaff00;
+}
+.hover\:bg-yellow:hover {
+  background-color: #eaff00;
+}
+

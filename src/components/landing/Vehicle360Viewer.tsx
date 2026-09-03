@@ -56,7 +56,7 @@ export function Vehicle360Viewer({
     }
   };
 
-  // Optical perspective offset based on current frame to simulate 24-frame 3D rotation
+  // Optical perspective offset based on current frame to simulate 3D rotation feel
   const opticalSkew = Math.sin((frame / totalFrames) * 2 * Math.PI) * 4;
   const opticalScale = 1 + Math.cos((frame / totalFrames) * 2 * Math.PI) * 0.04;
 
@@ -79,7 +79,7 @@ export function Vehicle360Viewer({
         >
           <img
             src={baseImage}
-            alt={`${vehicleName} 360 Inspection`}
+            alt={`${vehicleName} Inspection`}
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center filter saturate-105"
             draggable={false}
@@ -106,7 +106,7 @@ export function Vehicle360Viewer({
           </div>
         </div>
 
-        {/* Center 360 Turntable Ring Indicator */}
+        {/* Center Turntable Ring Indicator */}
         <div className="absolute inset-x-0 bottom-10 flex items-center justify-center pointer-events-none z-10">
           <div className="flex items-center gap-1.5 px-3 py-1 bg-black/85 backdrop-blur-md rounded-full border border-white/20 shadow-lg text-[11px] font-bold text-white tracking-wider uppercase">
             <RotateCw size={12} className={`animate-spin-slow ${vehicleType === 'ev' ? 'text-[#E3FF00]' : 'text-red-400'}`} />
@@ -116,33 +116,14 @@ export function Vehicle360Viewer({
           </div>
         </div>
 
-        {/* Required Drag / Hover Scrubbing Indicator */}
+        {/* Honest interaction label */}
         <div className="absolute bottom-2 inset-x-3 flex items-center justify-between pointer-events-none z-10 text-[10px] font-semibold uppercase tracking-wider text-zinc-300 bg-black/60 backdrop-blur-sm px-2.5 py-1 rounded border border-white/10">
           <div className="flex items-center gap-1.5">
             <Eye size={11} className={vehicleType === 'ev' ? 'text-[#E3FF00]' : 'text-red-400'} />
-            <span className="text-white font-medium">Drag or hover to rotate 360° asset view</span>
+            <span className="text-white font-medium">Hover to preview perspective tilt</span>
           </div>
-          <span className="font-semibold text-zinc-400">24-FRAME SYNC</span>
+          <span className="font-semibold text-zinc-400">LIVE PREVIEW</span>
         </div>
-      </div>
-
-      {/* Frame Scrubber Bar */}
-      <div className="w-full flex items-center gap-1 px-1">
-        {Array.from({ length: totalFrames }).map((_, i) => (
-          <button
-            key={i}
-            type="button"
-            onClick={() => setFrame(i)}
-            title={`Angle ${Math.round((i / totalFrames) * 360)}°`}
-            className={`flex-1 h-1.5 rounded-full transition-all cursor-pointer ${
-              i === frame
-                ? vehicleType === 'ev'
-                  ? 'bg-[#E3FF00] scale-y-125'
-                  : 'bg-red-500 scale-y-125'
-                : 'bg-zinc-300 hover:bg-zinc-400'
-            }`}
-          />
-        ))}
       </div>
     </div>
   );

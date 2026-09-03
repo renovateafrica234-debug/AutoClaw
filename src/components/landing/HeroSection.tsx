@@ -34,7 +34,7 @@ const HERO_VEHICLES: HeroVehicle[] = [
     price: '₦54,000,000',
     type: '100% ELECTRIC SUV',
     location: 'Abuja Fleet Yard & Port Harcourt Hub',
-    imageUrl: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=1600&q=80',
     specs: [
       { label: 'POWERTRAIN', value: '218 HP Rear Drive E-Motor' },
       { label: 'RANGE EFFICIENCY', value: '620 KM CLTC Range' },
@@ -50,7 +50,7 @@ const HERO_VEHICLES: HeroVehicle[] = [
     price: '₦68,500,000',
     type: 'DUAL MOTOR SEDAN',
     location: 'Victoria Island Flagship Lot, Lagos',
-    imageUrl: 'https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=1600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1600&q=80',
     specs: [
       { label: 'POWERTRAIN', value: '523 HP Dual Motor AWD' },
       { label: 'RANGE EFFICIENCY', value: '570 KM WLTP Range' },
@@ -66,7 +66,7 @@ const HERO_VEHICLES: HeroVehicle[] = [
     price: '₦92,000,000',
     type: '2.0L TURBO PETROL LUXURY SUV',
     location: 'Maitama Showroom, Abuja',
-    imageUrl: 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1600&q=80',
     specs: [
       { label: 'POWERTRAIN', value: '247 HP Turbocharged Petrol' },
       { label: 'CONSUMPTION', value: '11.2 L/100km City Consumption' },
